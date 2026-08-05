@@ -49,6 +49,92 @@ main {
 	margin: auto;
 	padding: 3em 1em;
 }
+.hero {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+	padding: 3rem 0;
+}
+.hero-copy {
+	max-width: 560px;
+}
+.hero-copy h1 {
+	font-size: 3.5rem;
+	margin-bottom: 0.5rem;
+}
+.hero-copy p {
+	margin: 1rem 0;
+}
+.hero-subtitle {
+	margin-top: 0.75rem;
+	color: rgb(var(--gray));
+	font-size: 1.1rem;
+}
+.hero-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-top: 1.5rem;
+}
+.button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 1rem 1.75rem;
+	border-radius: 999px;
+	background: var(--accent);
+	color: white;
+	text-decoration: none;
+	font-weight: 700;
+	box-shadow: 0 10px 30px rgba(35, 55, 255, 0.15);
+}
+.button-secondary {
+	background: rgba(35, 55, 255, 0.08);
+	color: rgb(var(--black));
+}
+.hero-image img {
+	width: 100%;
+	max-width: 520px;
+	border-radius: 24px;
+	object-fit: cover;
+}
+.services,
+.contact-card {
+	background: white;
+	border-radius: 24px;
+	padding: 2rem;
+	margin: 2rem 0;
+	box-shadow: var(--box-shadow);
+}
+.services h2,
+.contact-card h2 {
+	margin-top: 0;
+}
+.services ul {
+	margin: 1rem 0 0 1.25rem;
+	padding: 0;
+}
+.services li {
+	margin-bottom: 0.75rem;
+}
+@media (max-width: 920px) {
+	.hero {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
+@media (max-width: 720px) {
+	body {
+		font-size: 18px;
+	}
+	main {
+		padding: 1em;
+	}
+	.hero {
+		padding: 2rem 0;
+	}
+}
 h1,
 h2,
 h3,
